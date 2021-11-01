@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "专题分类",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "xsuu-swiper": "/components/Xss-swiper/Xsuu-swiper"
+  }
+}

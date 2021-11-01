@@ -1,0 +1,14 @@
+
+.articl-svg{
+	color: #555;
+	font-size: .5em;
+	line-height: 16px;
+	margin-right: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.articl-svg text{
+	white-space: nowrap;
+}
+
