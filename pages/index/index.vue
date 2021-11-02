@@ -80,7 +80,8 @@
 							<navigator open-type="navigate" :url="'../article/article?id=' + item.id">
 								<view class="card d-block">
 									<view>
-										<image :src="item.expand.img_src" mode="widthFix" class="card-img-top"></image>
+										<!-- mode="widthFix" -->
+										<image :src="item.expand.img_src" class="card-img-top"></image>
 										<view class="card-img-overlay">
 											<text class="badge badge-secondary p-1">
 												{{item.views || '0'}}

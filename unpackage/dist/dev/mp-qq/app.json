@@ -5,7 +5,8 @@
     "pages/search/search",
     "pages/sort/sort",
     "pages/article-sort/article-sort",
-    "pages/tool/tool"
+    "pages/tool/tool",
+    "pages/links/links"
   ],
   "window": {
     "navigationBarTextStyle": "black",

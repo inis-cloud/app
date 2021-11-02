@@ -446,6 +446,20 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 .alert.alert-success, .alert.bg-primary{border-left: 3px solid #727cf5;}
 .alert.alert-primary::before{background:#727cf5;content: "√";}
 .alert.alert-primary{border-left: 3px solid #727cf5;}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.card-footer {
+    padding: .75rem 1.5rem;
+    background-color: #fff;
+    border-top: 1px solid #e3eaef;
+}
+.card-footer:last-child {
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
 .flex-wrap{display:flex;justify-content:center;flex-wrap:wrap}
 .hr{border-bottom:1px #cacaca96 solid}
 .flex-center{display:flex;justify-content:center;align-items:center}
@@ -505,5 +519,22 @@ button.see-more:after{border:unset}
 	width: 100%;
 	height: 100px;
 	object-fit: cover;
+}
+.bottom-solid{
+	border-bottom: 1px solid #f1f3fa;
+	margin-bottom: .5rem;
+	padding-bottom: .5rem;
+}
+#links .head-img{
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	top: -20px;
+}
+#links .card-bodyquote .head .text-muted {
+    position: absolute;
+    top: 4px;
+    left: 74px;
+    font-size: 12px;
 }
 

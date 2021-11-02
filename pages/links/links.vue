@@ -130,7 +130,7 @@
 					params: {
 						id: this.id,
 						page,
-						limit: 1,
+						limit: 10,
 					}
 				}).then(res => {
 					if (res.data.code == 200) {
