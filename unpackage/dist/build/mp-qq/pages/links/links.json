@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "友链",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "v-tabs": "/components/v-tabs/v-tabs"
-  }
-}

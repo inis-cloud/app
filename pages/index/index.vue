@@ -1,7 +1,7 @@
 <template>
 	<view id="index">
 		<!-- 轮播组件 - 开始 -->
-		<view class="banner">
+		<view v-show="is_banner" class="banner">
 			<xsuu-swiper :swiperItems="swiperItems" :button="0"></xsuu-swiper>
 		</view>
 		<!-- 轮播组件 - 结束 -->
@@ -118,6 +118,7 @@
 		data() {
 			return {
 				inisENV: process.inisENV,
+				is_banner: true,		// 是否显示轮播
 				swiperItems: [],
 				tips: {
 					lists:['这是一条公告信息！'],
@@ -158,12 +159,20 @@
 			getBanner() {
 				this.$http.get('/banner').then(res => {
 					if (res.data.code == 200) {
-						let data = res.data.data.data
-						data.forEach(item => {
-							item.Subtitle = item.description
-							delete item.description
-						})
-						this.swiperItems = data
+						
+						let data = res.data.data
+						
+						if (data.count > 0) {
+							
+							data.data.forEach(item => {
+								item.Subtitle = item.description
+								delete item.description
+							})
+							this.swiperItems = data.data
+							this.is_banner = true
+							
+						} else this.is_banner = false
+						
 					}
 				})
 			},
@@ -260,6 +269,13 @@
 		},
 		computed: {
 			
+		},
+		onShareAppMessage() {
+			// #ifdef MP-QQ
+			qq.showShareMenu({
+				showShareItems: ['qq', 'qzone', 'wechatFriends', 'wechatMoment']
+			})
+			// #endif
 		}
 	}
 </script>

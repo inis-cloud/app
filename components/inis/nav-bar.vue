@@ -33,11 +33,8 @@
 						<view class="col-2">
 							<image src="@/static/logo.png" class="d-block w-50px h-50px"></image>
 						</view>
-						<view class="col-6">
+						<view class="col-10 text-center">
 							<text class="text-muted nowrap font-13">{{inisENV.description || ''}}</text>
-						</view>
-						<view class="col-4">
-							<button v-on:click="share()" type="default" class="share">分享</button>
 						</view>
 					</view>
 				</view>
@@ -57,9 +54,7 @@
 			
 		},
 		methods: {
-			share(){
-				console.log('分享？')
-			}
+			
 		}
 	}
 </script>
