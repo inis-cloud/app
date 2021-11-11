@@ -467,3 +467,16 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover{backgr
 .card-footer:last-child {
     border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
 }
+.h-1em{height: .5em;}
+.w-1em {width: .5em;}
+.h-2em{height: 1em;}
+.w-2em {width: 1em;}
+.h-3em{height: 1.5em;}
+.w-3em {width: 1.5em;}
+.h-4em{height: 2em;}
+.w-4em {width: 2em;}
+.h-5em{height: 2.5em;}
+.w-5em {width: 2.5em;}
+.flex-wrap{display:flex;justify-content:center;flex-wrap:wrap}
+.hr{border-bottom:1px #cacaca96 solid}
+.flex-center{display:flex;justify-content:center;align-items:center}
